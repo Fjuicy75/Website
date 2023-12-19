@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-Column Dark Theme</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* New styles for border and scroll effect */
+    .selected-image {
+      border: 2px solid red; /* Change the border style as needed */
+      overflow: auto; /* Enable scrolling for the selected image */
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Center align columns */
+    }
+
+    .content {
+      flex-basis: 30%; /* Adjust width for larger first column */
+      margin: 10px;
+      text-align: center; /* Center text in columns */
+    }
+
+
+    /* Adjust image max-width for smaller screens */
+    .content .column img {
+      max-width: 100%; /* Adjust the maximum width */
+    }
+
+    .column {
+      padding: 10px; /* Add padding around each column */
+      background-color: #000000; /* Background color for each column */
+      border-radius: 8px; /* Rounded corners for columns */
+    }
+
+    .header {
+      font-size: 1.2em; /* Adjust header font size */
+      margin-bottom: 10px; /* Add spacing between header and image */
+    }
+
+    .footer {
+      margin-top: 10px; /* Add spacing between image and footer */
+      font-style: italic; /* Make the footer text italic */
+    }
+   .column img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 10px; /* Add margin at the bottom of each image */
+    }
+body {
+      background-image: url('jovan7.jpg'); /* Replace 'your-background-image.jpg' with your image URL */
+      background-size: cover; /* Adjusts the image to cover the entire background */
+      background-position: center; /* Centers the background image */
+      background-attachment: fixed; /* Fixes the background when scrolling */
+    }
+ /* Font styles */
+  body {
+    font-family: Arial, sans-serif; /* Set a default font for the entire document */
+  }
+
+  .info {
+    font-family: "Cursive", Bold; /* Apply a serif font to paragraphs with class 'info' */
+  }
+
+  .footer {
+    font-family: "san-serif, Bold"; /* Apply a monospace font to elements with class 'footer' */
+  }
+
+  /* Additional font styles for specific elements */
+  .content .column p {
+    font-family: Georgia, serif; /* Apply a different serif font to paragraphs within columns */
+  }
+
+  .content .column .footer {
+    font-family: "Lucida Console", monospace; /* Apply a different monospace font to footer elements within columns */
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+    <div class="column" onclick="toggleInfo('info2', this)">
+
+
+        <img src="jovan2.jpg" alt="Image 2">
+        <p id="info2" class="info" style="display: none;">Meet Irish, a simple girl with a heart as sweet as her dream to become a pastry chef! Turning 20 on December 25, she is not just celebrating a birthday,she's unwrapping another chapter in her flavorful journey. You can call her  "Irish," this simple yet extraordinary girl finds joy in the art of cooking, transforming ordinary moments into culinary masterpieces. When she is not whipping up magic in the kitchen, you will catch her immersed in the world of Wattpad or creating vibrant canvases with her paintbrush. Family is her anchor, and the hues of pastel pink are her palette. Her favorite dish? A comforting bowl of Pork Sinigang. Join Irish as she navigates life with the motto, "Embrace the journey, and the results will follow."
+	</p>
+	<div class="footer">Irish Faith C. Bayudan</div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="column" onclick="toggleInfo('info3', this)">
+        <img src="jovan3.jpg" alt="Image 3">
+        <p id="info3" class="info" style="display: none;">Introducing Mark Laud, fondly called Macky. His world is painted in hues of blue, reflecting his calm and composed demeanor. A culinary enthusiast at heart, he finds solace in the comforting embrace of Sinigang na Bangus. With aspirations to craft culinary masterpieces, Mark dreams of donning the chef's hat, where each dish becomes a canvas of creativity. Guided by the mantra, "Success is the sum of small efforts, repeated," Mark approaches life with diligence, recognizing the power of consistent determination on the path to success.</p>
+	<div class="footer">Mark Celes B. Laud</div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="column" onclick="toggleInfo('info4', this)">
+        <img src="jovan4.jpg" alt="Image 4">
+        <p id="info4" class="info" style="display: none;">Glaiza graceful dancer with a heart that beats to the rhythm of music! With every step and twirl, Glaiza expresses her emotions and tells stories through the art of dance. Turning 20 on December 27, she is not just celebrating a birthday, but also stepping into a new chapter in her dance journey. You can call her "Glaiza," this extraordinary girl finds pure joy in the movement of her body, embracing the freedom and creativity that dance brings. When she is not perfecting her dance routines, you will find her exploring the great outdoors, captivated by the beauty of nature and the serenity it brings. Family is her biggest support system, and the colors of a breathtaking sunset inspire her passion for dance.. Join Glaiza as she navigates life with the motto, "Dance like nobody's watching, and let your soul be your guide."
+	</p>
+      <div class="footer">Glaiza Marie P. Guetteng</div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="column" onclick="toggleInfo('info5', this)">
+        <img src="jovan5.jpg" alt="Image 5">
+        <p id="info5" class="info" style="display: none;">Be prepared as we meet and learn about a dreamer, a positive thinker, and an aspirant chef named Janelle~. She's not only into cooking but also wants to travel and experience the different cultures in the world. In her free time, she enjoys spending time with her family, watching movies, and reading digital novels, mostly in the romantic and fantasy genres. Mint is her favorite color, which means warm and calm. A spicy and delicious Bopis is her favorite food. Every person could encounter different challenges, but as they say, "Every challenge is an opportunity to grow."
+	<br><br />
+	Motto in life: "Every challenge is an opportunity to grow.".</p>
+      <div class="footer">Janelle B. Jerez</div>
+      </div>
+    </div>
+
+    <div class="content">
+    <div class="column" onclick="toggleInfo('info6', this)">
+        <img src="jovan.jpg" alt="Image 6">
+        <p id="info6" class="info" style="display: none;">Let me introduce you to Jovan, a thrill-seeking adventurer with a passion for motorcycles! With a love for the open road running through his veins, he's always ready to hop on his bike and feel the adrenaline rushing through his veins. Turning 20 on June 30, he's not just celebrating another birthday, but another year of exhilarating rides and unforgettable experiences. You can call him "Jovan ," this free-spirited individual finds solace in the freedom and excitement of riding, turning ordinary roads into thrilling adventures. Family is his rock, and the colors of midnight blue and fiery orange are his signature. His favorite ride? Tackling the winding mountain roads with breathtaking views. Join Jovan as he embraces the open road with the motto, "Life is a journey, enjoy the ride!"</p>
+      <div class="footer">Jovan C. Taclan</div>
+      </div>
+    </div>
+    <div class="content">
+    <div class="column" onclick="toggleInfo('info7', this)">
+        <img src="jovan8.jpg" alt="Image 7">
+        <p id="info7" class="info" style="display: none;">Meet Shaine, a girl who seem strong on the outside but the truth, she is as delicate as fragile glass on the inside. People also know her, if she likes something, will definitely get it. She wants to work in a cruise ship someday because for her, working in a cruise ship gives a lot of opportunities also she wants to travel the world. In this 24th day of December, she'll gracefully step into the realm of adulthood, a world of unwritten possibilities, leaving behind the tales of her youth like a captivating prologue to the adventures that await. You can call her by her first name ‘Shaine’ because only her family and close friends can call her by her second name. During weekends, she enjoys going to spontaneous rides, going to beaches, watching sunset, she also likes reading books when she’s alone and loves taking pictures . Violet is her favorite color but she made people think she loves pink but she likes to wear black that’s how chaotic her life is. She likes kare-kare not just for its rich flavors, but because it's a specialty of her mother as well. Just like a caramel macchiato, her life blends with a symphony of flavors – the sweet highs, the subtle nuances of challenges, and the bold richness of dreams. It's a concoction of moments, each sip revealing a new layer of her uniquely crafted story, as she navigates the artistry of her own journey. enter the world of Shaine—a keeper of moments. Guided by her motto, "If it speaks to the heart, it earns a place in the cart," she navigates life's marketplace, filling her cart with the echoes of emotions, the hues of connection, and the melodies of genuine experiences.
+	</p>
+      <div class="footer">Shaine Angel Ugot</div>
+      </div>
+    </div>
+  </div>
+
+ <script>
+    function toggleInfo(infoId, contentDiv) {
+      var info = document.getElementById(infoId);
+      // Toggle display for information
+      if (info.style.display === "none") {
+        info.style.display = "block";
+      } else {
+        info.style.display = "none";
+      }
+
+      // Toggle border and scroll effect for the clicked image
+      var images = contentDiv.getElementsByTagName("img");
+      for (var i = 0; i < images.length; i++) {
+        images[i].classList.toggle("selected-image");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  background-color: #333;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+@font-face {
+  font-family:serif;
+  src: url(https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) format("truetype");
+}
+h1 { font-family: "Kimberley", sans-serif }
+
+.column h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.column p {
+  line-height: 1.5;
+}
+
+/* New styles for images */
+.content img {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes extra space below the image */
+}
